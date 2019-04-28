@@ -1,6 +1,6 @@
 {
   "name": "wp-packagist/wp-cli-global-config-command",
-  "description": "WP-CLI Global Configuration.",
+  "description": "WP-CLI Global Configuration Command.",
   "type": "wp-cli-package",
   "homepage": "https://github.com/wp-packagist/wp-cli-global-config-command",
   "license": "MIT",
