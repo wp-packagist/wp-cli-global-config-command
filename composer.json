@@ -1,0 +1,47 @@
+{
+  "name": "wp-packagist/wp-cli-global-config-command",
+  "description": "WP-CLI Global Configuration.",
+  "type": "wp-cli-package",
+  "homepage": "https://github.com/wp-packagist/wp-cli-global-config-command",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "wordpress",
+    "wp-cli"
+  ],
+  "authors": [
+    {
+      "name": "Mehrshad Darzi",
+      "email": "mehrshad198@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    },
+    "files": [
+      "command.php"
+    ]
+  },
+  "require": {
+    "php": "^5.4 || ^7.0",
+    "wp-packagist/wp-cli-helper": "dev-master",
+    "ext-json": "*"
+  },
+  "extra": {
+    "commands": [
+      "global-config",
+      "global-config set",
+      "global-config remove",
+      "global-config reset",
+      "global-config list",
+      "global-config get"
+    ]
+  },
+  "require-dev": {
+    "wp-cli/wp-cli": "^2.0"
+  },
+  "support": {
+    "issues": "https://github.com/wp-packagist/wp-cli-global-config-command/issues"
+  }
+}
