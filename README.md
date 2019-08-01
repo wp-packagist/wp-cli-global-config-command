@@ -146,7 +146,7 @@ wp global-config set db_pass ''
 
 ### Set new config with nested array key
 
-you can use `:` for per level.
+you can use `:` caharacter per level.
 
 ```
 wp global-config set @staging:user wpcli
