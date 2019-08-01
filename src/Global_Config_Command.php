@@ -93,9 +93,12 @@ class Global_Config_Command extends \WP_CLI_Command {
 		$value = trim( $_[1] );
 		$key   = $_[0];
 
-		//check bool
-		if ( $value == "false" || $value == "true" ) {
-			$value = filter_var( $value, FILTER_VALIDATE_BOOLEAN );
+		//Check True Or False
+		if ( $value == "true" ) {
+			$value = true;
+		}
+		if ( $value == "false" ) {
+			$value = false;
 		}
 
 		//Check INT
@@ -109,11 +112,11 @@ class Global_Config_Command extends \WP_CLI_Command {
 		}
 
 		//Check null value
-		if ( empty( $value ) || $value == "null" ) {
+		if ( $value == "null" ) {
 			$value = null;
 		}
 
-		//check nested
+		//Check nested
 		if ( stristr( $_[0], ":" ) != false ) {
 			$exp = explode( ":", $_[0] );
 			$exp = array_filter( $exp, function ( $value ) {
@@ -302,7 +305,7 @@ class Global_Config_Command extends \WP_CLI_Command {
 			WP_CLI::error( "The config list is empty." );
 		}
 
-		$list = WP_CLI_CONFIG::array_to_yaml( $list );
+		$list = WP_CLI_FileSystem::array_to_yaml( $list );
 		WP_CLI::log( $list );
 	}
 
@@ -350,7 +353,7 @@ class Global_Config_Command extends \WP_CLI_Command {
 			WP_CLI::error( "The " . WP_CLI_Helper::color( $_[0], "Y" ) . " parameter not found." );
 		}
 
-		$list = ( ! is_array( $list[ $_[0] ] ) ? $list[ $_[0] ] : WP_CLI_CONFIG::array_to_yaml( $list[ $_[0] ] ) );
+		$list = ( ! is_array( $list[ $_[0] ] ) ? $list[ $_[0] ] : WP_CLI_FileSystem::array_to_yaml( $list[ $_[0] ] ) );
 		WP_CLI::log( $list );
 	}
 }
