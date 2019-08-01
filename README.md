@@ -16,17 +16,17 @@ With this package, you can easily add, delete or edit WP-CLI global parameters i
 - [Commands](#commands)
   * [Show list](#show-list)
   * [Set New Config](#set-new-config)
-      - [Set new config with the boolean value](#set-new-config-with-boolean-value)
-      - [Set new config with the number value](#set-new-config-with-number-value)
-      - [Set new config with an array value](#set-new-config-with-array-value)
-      - [Set new config with the null value](#set-new-config-with-null-value)
-      - [Set new config with the empty value](#set-new-config-with-empty-value)
+      - [Set new config with the boolean value](#set-new-config-with-the-boolean-value)
+      - [Set new config with the number value](#set-new-config-with-the-number-value)
+      - [Set new config with the array value](#set-new-config-with-the-array-value)
+      - [Set new config with the null value](#set-new-config-with-the-null-value)
+      - [Set new config with empty value](#set-new-config-with-empty-value)
   * [Set new config with nested array key](#set-new-config-with-nested-array-key)
   * [Get Config Value](#get-config-value)
   * [Remove Config Value](#remove-config-value)
   * [Reset Configuration](#reset-configuration)
 - [Author](#author)
-- [Contributing](#contributing)  
+- [Contributing](#contributing)
   
 
 ## Installation
