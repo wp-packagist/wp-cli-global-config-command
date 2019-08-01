@@ -6,10 +6,6 @@ This config saved in `config.yml` or `wp-cli.yml` files. [ https://make.wordpres
 
 With this package you can easily add, delete or edit WP-CLI global parameters in the command line and you no longer need to edit the source settings file.
 
-![GitHub](https://img.shields.io/github/license/wp-packagist/wp-cli-global-config-command.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/wp-packagist/wp-cli-global-config-command.svg)
-![GitHub release](https://img.shields.io/github/release/wp-packagist/wp-cli-global-config-command.svg?style=social)
-  
 <br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/wp-packagist/wp-cli-global-config-command/master/wp-cli.png" alt="WP-CLI logo">
