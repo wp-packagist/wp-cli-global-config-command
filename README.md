@@ -10,6 +10,25 @@ With this package you can easily add, delete or edit WP-CLI global parameters in
 ![GitHub repo size](https://img.shields.io/github/repo-size/wp-packagist/wp-cli-global-config-command.svg)
 ![GitHub release](https://img.shields.io/github/release/wp-packagist/wp-cli-global-config-command.svg?style=social)
   
+- [Installation](#installation)
+- [Structure](#structure)
+- [Commands](#commands)
+  * [Show list](#show-list)
+  * [Set New Config](#set-new-config)
+      - [Set new config with space in key](#set-new-config-with-space-in-key)
+      - [Set new config with boolean value](#set-new-config-with-boolean-value)
+      - [Set new config with number value](#set-new-config-with-number-value)
+      - [Set new config with array value](#set-new-config-with-array-value)
+      - [Set new config with null value](#set-new-config-with-null-value)
+      - [Set new config with empty value](#set-new-config-with-empty-value)
+  * [Set new config with nested array key](#set-new-config-with-nested-array-key)
+  * [Get Config Value](#get-config-value)
+  * [Remove Config Value](#remove-config-value)
+  * [Reset Configuration](#reset-configuration)
+- [Author](#author)
+- [Contributing](#contributing)  
+  
+
 ## Installation
 
 You can install this package with:
@@ -19,6 +38,8 @@ wp package install wp-packagist/wp-cli-global-config-command
 ```
 
 > Installing this package requires WP-CLI v2 or greater. Update to the latest stable release with `wp cli update`.
+
+
 
 ## Structure
 
@@ -46,9 +67,13 @@ SUBCOMMANDS
 
 For All commands in this package you can use `--local` flag for process in local config file current working directory [wp-cli.local.yml]. 
 
+
+
 ## Commands
 
 List of WP-CLI global config Commands :
+
+
 
 ### Show list
 
@@ -63,6 +88,8 @@ also for show list of all global config in current directory:
 ```
 wp global-config list
 ```
+
+
 
 ### Set New Config
 
@@ -116,6 +143,8 @@ wp global-config set db_pass null
 wp global-config set db_pass ''
 ```
 
+
+
 ### Set new config with nested array key
 
 you can use `:` for per level.
@@ -138,6 +167,8 @@ disable plugin install command only in current directory project.
 wp global-config set disabled_commands '["plugin install"]' --local
 ```
 
+
+
 ### Get Config Value
 
 Structure:
@@ -157,6 +188,8 @@ or for local config
 ```
 wp global-config get url --local
 ```
+
+
 
 ### Remove Config Value
 
@@ -182,6 +215,8 @@ You can also nested key name in this command.
 wp global-config remove key_1:key_2_child
 ```
 
+
+
 ### Reset Configuration
 
 ```
@@ -194,6 +229,8 @@ for local current directory config:
 wp global-config reset --local
 ```
 
+
+
 ## Author
 
 <p align="center">
@@ -202,6 +239,8 @@ wp global-config reset --local
  <p align="center">Mehrshad Darzi
  <br>PHP Fullstack and WordPress Developer
  <br>Mehrshad198 [at] gmail.com</p>
+
+
 
 ## Contributing
 
