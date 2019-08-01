@@ -8,7 +8,7 @@ With this package you can easily add, delete or edit WP-CLI global parameters in
 
 <br>
 <p align="center">
-<img src="https://raw.githubusercontent.com/wp-packagist/wp-cli-global-config-command/master/wp-cli.png" alt="WP-CLI logo">
+<img src="https://raw.githubusercontent.com/wp-packagist/wp-cli-global-config-command/master/wp-cli-logo.png" alt="WP-CLI logo">
 </p>
   
 - [Installation](#installation)
