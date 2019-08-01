@@ -2,7 +2,7 @@
 
 WP-CLI has a series of global parameters (e.g. --path=<path> and --user=<user>) which work with all commands.
 
-This config saved in `config.yml` or `wp-cli.yml` files. [ https://make.wordpress.org/cli/handbook/config/ ]
+This config saved in `config.yml` or `wp-cli.yml` files. [[WP-CLI Document]](https://make.wordpress.org/cli/handbook/config/).
 
 With this package you can easily add, delete or edit WP-CLI global parameters in the command line and you no longer need to edit the source settings file.
 
