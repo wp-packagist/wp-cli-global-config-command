@@ -319,7 +319,7 @@ class Global_Config_Command extends \WP_CLI_Command {
 	 *
 	 * ## EXAMPLES
 	 *
-	 *      # get config
+	 *      # get config with port key name
 	 *      $ wp global-config get port
 	 *
 	 *      # get config from local
