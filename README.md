@@ -4,7 +4,7 @@ WP-CLI has a series of global parameters (e.g. --path=<path> and --user=<user>) 
 
 This config saved in `config.yml` or `wp-cli.yml` files. [[WP-CLI Document]](https://make.wordpress.org/cli/handbook/config/).
 
-With this package you can easily add, delete or edit WP-CLI global parameters in the command line and you no longer need to edit the source settings file.
+With this package, you can easily add, delete or edit WP-CLI global parameters in the command line and you no longer need to edit the source settings file.
 
 <br>
 <p align="center">
@@ -16,12 +16,11 @@ With this package you can easily add, delete or edit WP-CLI global parameters in
 - [Commands](#commands)
   * [Show list](#show-list)
   * [Set New Config](#set-new-config)
-      - [Set new config with space in key](#set-new-config-with-space-in-key)
-      - [Set new config with boolean value](#set-new-config-with-boolean-value)
-      - [Set new config with number value](#set-new-config-with-number-value)
-      - [Set new config with array value](#set-new-config-with-array-value)
-      - [Set new config with null value](#set-new-config-with-null-value)
-      - [Set new config with empty value](#set-new-config-with-empty-value)
+      - [Set new config with the boolean value](#set-new-config-with-boolean-value)
+      - [Set new config with the number value](#set-new-config-with-number-value)
+      - [Set new config with an array value](#set-new-config-with-array-value)
+      - [Set new config with the null value](#set-new-config-with-null-value)
+      - [Set new config with the empty value](#set-new-config-with-empty-value)
   * [Set new config with nested array key](#set-new-config-with-nested-array-key)
   * [Get Config Value](#get-config-value)
   * [Remove Config Value](#remove-config-value)
@@ -66,7 +65,7 @@ SUBCOMMANDS
   set         Set new config.
 ```
 
-For All commands in this package you can use `--local` flag for process in local config file current working directory [wp-cli.local.yml]. 
+For All commands in this package, you can use `--local` flag for process in a local config file current working directory [wp-cli.local.yml]. 
 
 
 
@@ -84,7 +83,7 @@ For show list all global parameters:
 wp global-config list
 ```
 
-also for show list of all global config in current directory:
+also for show list of all global config in the current directory:
 
 ```
 wp global-config list
@@ -100,31 +99,25 @@ Structure:
 wp global-config set <key> <value> [--local]
 ```
 
-For example set new path:
+For example, set new path:
 
 ```
 wp global-config set path ~/wp-cli/site
 ```
 
-##### Set new config with space in key
-
-```
-wp global-config set "config create" new_value
-```
-
-##### Set new config with boolean value
+##### Set new config with the boolean value
 
 ```
 wp global-config set color false
 ```
 
-##### Set new config with number value
+##### Set new config with the number value
 
 ```
 wp global-config set my-custom-number 100
 ```
 
-##### Set new config with array value
+##### Set new config with the array value
 
 use JSON Format.
 
@@ -132,10 +125,17 @@ use JSON Format.
 wp global-config set disabled_commands '["db drop","plugin install"]'
 ```
 
-##### Set new config with null value
+##### Set new config with the null value
 
 ```
 wp global-config set db_pass null
+```
+
+
+##### Set new config with space in key
+
+```
+wp global-config set "config create" new_value
 ```
 
 ##### Set new config with empty value
@@ -143,8 +143,6 @@ wp global-config set db_pass null
 ```
 wp global-config set db_pass ''
 ```
-
-
 
 ### Set new config with nested array key
 
@@ -162,7 +160,7 @@ wp global-config set @staging:user:ID 32
 
 example 3:
 
-disable plugin install command only in current directory project.
+disable plugin install command only in the current directory project.
 
 ```
 wp global-config set disabled_commands '["plugin install"]' --local
@@ -184,7 +182,7 @@ For example:
 wp global-config get port
 ```
 
-or for local config
+or for local config:
 
 ```
 wp global-config get url --local
@@ -224,12 +222,11 @@ wp global-config remove key_1:key_2_child
 wp global-config reset
 ```
 
-for local current directory config:
+For local current directory config:
 
 ```
 wp global-config reset --local
 ```
-
 
 
 ## Author
