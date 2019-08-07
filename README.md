@@ -86,7 +86,7 @@ wp global-config list
 also for show list of all global config in the current directory:
 
 ```
-wp global-config list
+wp global-config list --local
 ```
 
 
