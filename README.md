@@ -87,7 +87,7 @@ wp global-config list
 
 also for show list of all global config in the current directory:
 
-```
+```console
 wp global-config list --local
 ```
 
@@ -109,7 +109,7 @@ wp global-config set path ~/wp-cli/site
 
 ##### Set new config with the boolean value
 
-console
+```console
 wp global-config set color false
 ```
 
@@ -136,8 +136,7 @@ wp global-config set db_pass null
 
 ##### Set new config with space in key
 
-console
-```
+```console
 wp global-config set "config create" new_value
 ```
 
@@ -228,7 +227,7 @@ wp global-config reset --local
 
 ## Author
 
-- [Mehrshad Darzi](https://www.linkedin.com/in/mehrshaddarzi/) | PHP FullStack and WordPress Expert
+- [Mehrshad Darzi](https://www.linkedin.com/in/mehrshaddarzi/) | PHP Full Stack and WordPress Expert
 
 ## Contributing
 
