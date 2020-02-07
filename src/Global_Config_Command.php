@@ -267,7 +267,7 @@ class Global_Config_Command extends WP_CLI_Command
             WP_CLI::error("The config list is empty.");
         }
 
-        WP_CLI::confirm("Are you sure you want to reset config ?");
+        WP_CLI::confirm("Are you sure you want to reset config?");
         $wp_cli_config->remove_config_file();
         WP_CLI::success("Config reset.");
     }

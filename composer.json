@@ -28,6 +28,10 @@
     "wp-packagist/wp-cli-helper": "dev-master",
     "ext-json": "*"
   },
+  "require-dev": {
+    "wp-cli/wp-cli": "^2.0",
+    "phpunit/phpunit": "^8"
+  },
   "extra": {
     "commands": [
       "global-config",
@@ -38,10 +42,10 @@
       "global-config get"
     ]
   },
-  "require-dev": {
-    "wp-cli/wp-cli": "^2.0"
-  },
   "support": {
     "issues": "https://github.com/wp-packagist/wp-cli-global-config-command/issues"
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
