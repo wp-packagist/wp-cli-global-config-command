@@ -5,11 +5,8 @@ php:
   - 7.3
   - 7.4
 
-install:
+brfore_install:
   - composer install
-
-before_script:
-  - composer validate --strict
 
 script:
   - composer test
