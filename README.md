@@ -1,5 +1,7 @@
 # WP-CLI Global Configuration Command
 
+[![Build Status](https://travis-ci.com/wp-packagist/wp-cli-global-config-command.svg?branch=master)](https://travis-ci.com/wp-packagist/wp-cli-global-config-command) ![GitHub](https://img.shields.io/github/license/wp-packagist/wp-cli-global-config-command) ![Packagist Version](https://img.shields.io/packagist/v/wp-packagist/wp-cli-global-config-command)
+
 WP-CLI has a series of global parameters (e.g. --path=<path> and --user=<user>) which work with all commands.
 
 This config saved in `config.yml` or `wp-cli.yml` files. [[WP-CLI Document]](https://make.wordpress.org/cli/handbook/config/).
